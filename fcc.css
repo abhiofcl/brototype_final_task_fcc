@@ -177,6 +177,7 @@ h2 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 80px;
 }
 .alumni-card {
   background-color: #0a0a23;
@@ -185,8 +186,8 @@ h2 {
   display: flex;
   flex-direction: row;
   margin-bottom: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
 }
 .alumni-card img {
   background-color: gray;
@@ -199,4 +200,52 @@ h2 {
   justify-content: center;
   text-align: justify;
   color: #f5f6f7;
+}
+.courses {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-inline: 4vw;
+  padding-block: 4vw;
+  width: 60%;
+  /* margin-left: 16.6%; */
+}
+.courses ul {
+  list-style: none;
+  color: #f5f6f7;
+
+  margin-bottom: 13px;
+  margin-top: 20px;
+  width: 100%;
+  padding-left: 0;
+}
+.courses a {
+  color: #f5f6f7;
+  min-height: 80px;
+  background-color: #3b3b4f;
+  border: 2px solid white;
+
+  /* padding: 40px; */
+  font-size: 1.1rem;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+  padding: 10px 16px;
+  line-height: 1.3333333;
+}
+.course-desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.courses i {
+  font-size: 2.5rem;
 }
