@@ -249,3 +249,14 @@ h2 {
 .courses i {
   font-size: 2.5rem;
 }
+.faqs-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  margin: 0 auto;
+  padding-inline: 4vw;
+  padding-block: 4vw;
+  width: 60%;
+}
