@@ -1,0 +1,16 @@
+.site-header {
+  height: 60px;
+  padding: 0 15px;
+  background-color: #0a0a23;
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.heading img {
+  align-items: center;
+  width: 200px;
+  height: 100px;
+}

@@ -260,3 +260,45 @@ h2 {
   padding-block: 4vw;
   width: 60%;
 }
+.item1 {
+  grid-area: footerleft;
+}
+.item2 {
+  grid-area: footerh;
+}
+.item3 {
+  grid-area: footersl;
+}
+.item4 {
+  grid-area: footersr;
+}
+footer {
+  background-color: #2a2a40;
+  color: #dfdfe2;
+  padding-top: 10px;
+}
+.footer-wrapper {
+  background-color: #2a2a40;
+  color: #dfdfe2;
+  line-height: 1.6;
+  padding: 40px 15px;
+
+  display: grid;
+  grid-template-areas:
+    "footerleft footerleft footerh footerh footerh footerh"
+    "footerleft footerleft footersl footersl footersr footersr";
+
+  gap: 10px;
+  /* background-color: #2196f3; */
+  padding: 10px;
+}
+
+.footer-left {
+  padding-inline: 15px;
+  margin-bottom: 30px;
+}
+
+.footerbottom li {
+  display: inline;
+  padding: 10px;
+}

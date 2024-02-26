@@ -4,30 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="fcc.css" />
+    <title>FCC Sign In</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="signin.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="page-wrapper">
-      <header>
-        <div class="site-header">
-          <div class="search">
-            <i class="ri-search-line searchicon"></i>
-            <form action="">
-              <input type="text" placeholder="Search our website" />
-            </form>
-            <i class="ri-close-line closeicon"></i>
-          </div>
+    <header>
+      <div class="site-header">
+        <div class="header">
           <div class="heading">
             <svg
               data-cy="freeCodeCamp-logo"
@@ -209,485 +203,47 @@
               ></use>
             </svg>
           </div>
-          <div class="navitems">
-            <button>
-              <i class="ri-global-line"></i>
-            </button>
-            <button>Menu</button>
-            <button
-              style="
-                background-color: #feac32;
-                color: #000;
-                border-color: #feac32;
-                border-width: 3px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 0 4px;
-                font-size: 18px;
-              "
-              class="sign-in"
-            >
-              Sign In
-            </button>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <form id="signinform" action="">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
           </div>
         </div>
-      </header>
-      <main>
-        <section class="intro" style="color: aliceblue">
-          <div style="padding: 15px 0"></div>
-          <div class="intro-wrapper">
-            <h1 class="introheading">Learn to Code for free</h1>
-            <h1 class="introheading">Build Projects.</h1>
-            <h1 class="introheading">Earn Certifications.</h1>
-            <p style="font-weight: 700; font-size: 1.25rem; margin: 0.6rem 0">
-              Since 2014, more than 40,000 freeCodeCamp.org graduates have
-              gotten jobs at tech companies including:
-            </p>
-            <div class="company-logos">
-              <i class="ri-apple-fill"></i>
-              <div><i class="ri-google-fill">oogle</i></div>
-              <div><i class="ri-microsoft-fill">Microsoft</i></div>
-
-              <div><i class="ri-spotify-fill">Spotify</i></div>
-              <div><i class="ri-amazon-fill">amazon.com</i></div>
-            </div>
-            <div style="padding: 15px 0"></div>
-            <div class="introbutton">
-              <button
-                style="
-                  background-color: #feac32;
-                  color: #000;
-                  border-color: #feac32;
-                  border-width: 3px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  padding: 0 4px;
-                  font-size: 18px;
-                "
-                class="introbutton"
-              >
-                Get Started (It's Free)
-              </button>
-            </div>
-            <div style="padding: 15px 0"></div>
-          </div>
-        </section>
-        <section class="">
-          <div class="media">
-            <span>As seen in:</span>
-            <img src="img/medias.png" alt="" />
-          </div>
-        </section>
-        <section class="alumni">
-          <div class="alumni-wrapper">
-            <h2
-              style="
-                font-weight: 700;
-                height: 100%;
-                line-height: 1.1rem;
-                margin-bottom: 40px;
-                margin-top: 40px;
-              "
-            >
-              Here is what our alumni say about freeCodeCamp
-            </h2>
-            <div class="alumni-card">
-              <div><img src="img/robo1.png" alt="robo1" /></div>
-              <div class="para">
-                <div style="padding: 0 0 30px">
-                  <h3
-                    style="
-                      font-size: 1.3rem;
-                      font-weight: 400;
-                      margin-bottom: 0;
-                    "
-                  >
-                    Abhishek V
-                  </h3>
-                  <p style="margin-top: 15px; font: size 1.3rem">
-                    SDE At Google
-                  </p>
-                </div>
-                <p>
-                  "It's scary to change careers. I only gained confidence that I
-                  could code by working through the hundreds of hours of free
-                  lessons on freeCodeCamp. Within a year I had a six-figure job
-                  as a Software Engineer. freeCodeCamp changed my life."
-                </p>
-              </div>
-            </div>
-            <div class="alumni-card">
-              <div><img src="img/robo1.png" alt="robo1" /></div>
-              <div class="para">
-                <div style="padding: 0 0 30px">
-                  <h3
-                    style="
-                      font-size: 1.3rem;
-                      font-weight: 400;
-                      margin-bottom: 0;
-                    "
-                  >
-                    Abhishek V
-                  </h3>
-                  <p style="margin-top: 15px; font: size 1.3rem">
-                    SDE At Google
-                  </p>
-                </div>
-                <p>
-                  "It's scary to change careers. I only gained confidence that I
-                  could code by working through the hundreds of hours of free
-                  lessons on freeCodeCamp. Within a year I had a six-figure job
-                  as a Software Engineer. freeCodeCamp changed my life."
-                </p>
-              </div>
-            </div>
-            <div class="alumni-card">
-              <div><img src="img/robo1.png" alt="robo1" /></div>
-              <div class="para">
-                <div style="padding: 0 0 30px">
-                  <h3
-                    style="
-                      font-size: 1.3rem;
-                      font-weight: 400;
-                      margin-bottom: 0;
-                    "
-                  >
-                    Abhishek V
-                  </h3>
-                  <p style="margin-top: 15px; font: size 1.3rem">
-                    SDE At Google
-                  </p>
-                </div>
-                <p>
-                  "It's scary to change careers. I only gained confidence that I
-                  could code by working through the hundreds of hours of free
-                  lessons on freeCodeCamp. Within a year I had a six-figure job
-                  as a Software Engineer. freeCodeCamp changed my life."
-                </p>
-              </div>
-            </div>
-            <div class="introbutton">
-              <button
-                style="
-                  background-color: #feac32;
-                  color: #000;
-                  border-color: #feac32;
-                  border-width: 3px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  padding: 0 4px;
-                  font-size: 18px;
-                "
-                class="introbutton"
-              >
-                Get Started (It's Free)
-              </button>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="courses" style="height: 100%">
-            <div>
-              <h1 style="font-weight: 700; overflow-wrap: break-word">
-                Earn free verified certifications with freeCodeCamp's core
-                curriculum:
-              </h1>
-            </div>
-            <ul>
-              <li class="course-card">
-                <a href="#"
-                  ><div class="course-desc">
-                    <i class="ri-macbook-line"></i>
-                    Responsive Web Design Certification
-                  </div>
-                  <i
-                    class="ri-arrow-right-double-line"
-                    style="
-                      height: 100%;
-                      margin-inline-start: 5px;
-                      min-height: 20px;
-                      min-width: 16px;
-                    "
-                  ></i
-                ></a>
-              </li>
-              <li class="course-card">
-                <a href="#"
-                  ><div class="course-desc">
-                    <i class="ri-javascript-fill"></i>
-                    JavaScript Algorithms and Data Structures(Beta)
-                    Certification
-                  </div>
-                  <i
-                    class="ri-arrow-right-double-line"
-                    style="
-                      height: 100%;
-                      margin-inline-start: 5px;
-                      min-height: 20px;
-                      min-width: 16px;
-                    "
-                  ></i
-                ></a>
-              </li>
-              <li class="course-card">
-                <a href="#"
-                  ><div class="course-desc">
-                    <i class="ri-reactjs-fill"></i>
-                    Front End Development Libraries Certification
-                  </div>
-                  <i
-                    class="ri-arrow-right-double-line"
-                    style="
-                      height: 100%;
-                      margin-inline-start: 5px;
-                      min-height: 20px;
-                      min-width: 16px;
-                    "
-                  ></i
-                ></a>
-              </li>
-              <li class="course-card">
-                <a href="#"
-                  ><div class="course-desc">
-                    <i class="ri-database-2-fill"></i>
-                    Relational Database Certification
-                  </div>
-                  <i
-                    class="ri-arrow-right-double-line"
-                    style="
-                      height: 100%;
-                      margin-inline-start: 5px;
-                      min-height: 20px;
-                      min-width: 16px;
-                    "
-                  ></i
-                ></a>
-              </li>
-              <li class="course-card">
-                <a href="#"
-                  ><div class="course-desc">
-                    <i class="ri-server-fill"></i>
-                    Backend Development and APIs Certification
-                  </div>
-                  <i
-                    class="ri-arrow-right-double-line"
-                    style="
-                      height: 100%;
-                      margin-inline-start: 5px;
-                      min-height: 20px;
-                      min-width: 16px;
-                    "
-                  ></i
-                ></a>
-              </li>
-              <li class="course-card">
-                <a href="#"
-                  ><div class="course-desc">
-                    <i class="ri-survey-fill"></i>
-                    Quality Assurance Certification
-                  </div>
-                  <i
-                    class="ri-arrow-right-double-line"
-                    style="
-                      height: 100%;
-                      margin-inline-start: 5px;
-                      min-height: 20px;
-                      min-width: 16px;
-                    "
-                  ></i
-                ></a>
-              </li>
-              <li class="course-card">
-                <a href="#"
-                  ><div class="course-desc">
-                    <i class="ri-line-chart-line"></i>
-                    Data Analysis with Python Certification
-                  </div>
-                  <i
-                    class="ri-arrow-right-double-line"
-                    style="
-                      height: 100%;
-                      margin-inline-start: 5px;
-                      min-height: 20px;
-                      min-width: 16px;
-                    "
-                  ></i
-                ></a>
-              </li>
-            </ul>
-            <div class="introbutton">
-              <button
-                style="
-                  background-color: #feac32;
-                  color: #000;
-                  border-color: #feac32;
-                  border-width: 3px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  padding: 0 4px;
-                  font-size: 18px;
-                "
-                class="introbutton"
-              >
-                Get Started (It's Free)
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <sections class="faqs">
-          <div class="faqs-wrapper">
-            <h2>Frequently asked questions:</h2>
-            <div class="faq-element">
-              <h3>What exactly is freeCodeCamp?</h3>
-              <p>
-                freeCodeCamp is a community of people from all around the world
-                who are learning to code together. We're a 501(c)(3) public
-                charity.
-              </p>
-            </div>
-            <div class="faq-element">
-              <h3>How will freeCodeCamp help me learn to code?</h3>
-              <p>
-                You will learn to code by building dozens of projects,
-                step-by-step, right in your browser, code editor, or mobile app.
-                You will also earn free verified certifications along the way.
-              </p>
-            </div>
-            <div class="faq-element">
-              <h3>Is freeCodeCamp really free?</h3>
-              <p>
-                Yes. Every aspect of freeCodeCamp is 100% free. The courses, the
-                projects, and even the certifications.
-              </p>
-            </div>
-            <div class="faq-element">
-              <h3>
-                Can freeCodeCamp help me get a job as a software developer?
-              </h3>
-              <p>
-                Yes. Every year, thousands of people who join the freeCodeCamp
-                community get their first software developer job.
-              </p>
-            </div>
-            <div class="faq-element">
-              <h3>What skills will I learn?</h3>
-              <p>
-                You will learn the skills most developers use on the job: HTML,
-                CSS, JavaScript, Python, Linux, Git, and SQL, and more. You'll
-                also learn how to use powerful libraries for web development,
-                mobile app development, data science, and artificial
-                intelligence.
-              </p>
-            </div>
-            <div class="faq-element">
-              <h3>How long does it take to learn all this?</h3>
-              <p>
-                freeCodeCamp is self-paced. Realistically, it may take several
-                years of practicing coding to learn these skills well enough to
-                get a job as a software engineer. Don't quit school or your day
-                job until you feel ready.
-              </p>
-            </div>
-            <div class="faq-element">
-              <h3>How do I get started?</h3>
-              <p>
-                If you're a beginner, you should start at the beginning of the
-                freeCodeCamp core curriculum. If you're more advanced, we still
-                recommend starting at the beginning, but you can skip to
-                whatever area you wish.
-              </p>
-            </div>
-            <div class="faq-element">
-              <h3>How do I earn the free verified certifications?</h3>
-              <p>
-                For each certification, you need to build its 5 certification
-                projects, and get all of the project tests to pass to be able to
-                claim your certification.
-              </p>
-            </div>
-            <div class="faq-element">
-              <h3>
-                I don't see [name of tool] in the freeCodeCamp core curriculum.
-              </h3>
-              <p>
-                Aside from the freeCodeCamp core curriculum, We have thousands
-                of free, full-length books, courses, and programming tutorials.
-                We almost certainly teach whatever programming tools you want to
-                learn. Just use the search bar.
-              </p>
-              <h3>Happy coding!</h3>
-            </div>
-          </div>
-        </sections>
-      </main>
-
-      <footer>
-        <div class="footer-wrapper">
-          <div class="footer-left item1">
-            <p>
-              freeCodeCamp is a donor-supported tax-exempt 501(c)(3) charitable
-              organization (United States Federal Tax Identification Number:
-              82-0779546).
-            </p>
-            <p>
-              Our mission: to help people learn to code for free. We accomplish
-              this by creating thousands of videos, articles, and interactive
-              coding lessons - all freely available to the public.
-            </p>
-            <p>
-              Donations to freeCodeCamp go toward our education initiatives, and
-              help pay for servers, services, and staff.
-            </p>
-            <h5>
-              You can make a
-              <a href="#" style="color: white">tax-deductible donation here.</a>
-            </h5>
-          </div>
-          <div class="item2">Trending Guides</div>
-          <div class="item3">
-            <ul>
-              <li>Binary Search in C++</li>
-              <li>JS Comparison Operators</li>
-              <li>Lambda Sort in Python</li>
-              <li>Python Print Exception</li>
-            </ul>
-          </div>
-          <div class="item4">
-            <ul>
-              <li>Binary Search in Java</li>
-              <li>List Flatten in Python</li>
-              <li>Enhanced Java for-loops</li>
-              <li>Python Program Examples</li>
-            </ul>
-          </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
         </div>
-        <div style="text-align: center" class="footerbottom">
-          <ul style="list-style: none">
-            <li>About</li>
-            <li>Alumni Network</li>
-            <li>Open Source</li>
-            <li>Shop</li>
-            <li>Support</li>
-            <li>Sponsors</li>
-            <li>Academic honesty</li>
-            <li>Code of Conduct</li>
-            <li>Privacy Policy</li>
-            <li>Terms of Service</li>
-            <li>Copyright Policy</li>
-          </ul>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
         </div>
-      </footer>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
+
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="./script.js"></script>
   </body>
 </html>
