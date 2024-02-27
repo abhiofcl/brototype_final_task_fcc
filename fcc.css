@@ -36,7 +36,7 @@ header {
   position: relative;
   display: grid;
   grid-template-areas: "submit input reset";
-  grid-template-columns: 26px auto 36px;
+  grid-template-columns: 26px 1fr 36px;
   padding: 0 10px;
 
   align-items: center;
@@ -52,8 +52,9 @@ header {
 
   max-width: 100%;
   width: 100%;
-  height: 30px;
+  height: 40px;
   position: relative;
+  flex-grow: 1;
 }
 .searchicon {
   grid-area: submit;
