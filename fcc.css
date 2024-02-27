@@ -35,8 +35,8 @@ header {
   background-color: #3b3b4f;
   position: relative;
   display: grid;
-  grid-template-areas: "submit input reset";
-  grid-template-columns: 26px 1fr 36px;
+  grid-template-areas: "submit input ";
+  grid-template-columns: 26px 1fr;
   padding: 0 10px;
 
   align-items: center;
@@ -60,10 +60,10 @@ header {
   grid-area: submit;
   padding-inline: 3px;
 }
-.closeicon {
+/* .closeicon {
   grid-area: reset;
   display: none;
-}
+} */
 .heading img {
   align-items: center;
   width: 200px;
